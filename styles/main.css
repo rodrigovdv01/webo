@@ -4,11 +4,43 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /*outline: solid 1px red;*/
 }
 
 body {
     font-family: sans-serif;
     max-width: 100%;
+}
+
+.page-wrapper {
+    display: grid;
+    margin: 0;
+    justify-items: stretch;
+    grid-template-rows: 10vh auto 40vh;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    padding: 0.5vh 2vw;
+    position: fixed;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
+}
+
+.page-footer {
+    background-color: #000;
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    color: #fff;
 }
 
 h3 {
@@ -48,29 +80,24 @@ a {
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000;
     border-radius: 10px;
     border: #000 solid 2px;
-    font-family: 'Kanit', sans-serif;
-    font-size: 22px;
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 21px;
     font-weight: 900;
-    padding: 5px 15px;
     margin: 0 10px;
     box-shadow: -5px 5px #000;
     background-color: #ffffff;
+    height: 40px;
+    width: 40px;
 }
 
 
 /* | HEADER | */
-
-.header {
-    height: 10vh;
-    width: 100%;
-    padding: 0.5vh 1vw;
-    position: fixed;
-    z-index: 100;
-    background-color: #ffffff;
-}
 
 .header_inner {
     display: flex;
@@ -82,26 +109,34 @@ a {
     align-items: center;
     align-self: center;
     justify-content: end;
-    padding-left: 60px;
 }
 
 .menu-btn {
     align-items: center;
-    height: 100%;
-}
-
-.banner-btn {
-    position: absolute;
-    bottom: 10vh;
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 10px;
+    border: #000 solid 2px;
+    font-family: 'Akira Expanded', sans-serif;
+    font-weight: 900;
+    margin: 0 10px;
+    box-shadow: -5px 5px #000;
+    background-color: #ffffff;
 }
 
 .logo {
     font-family: 'Pacifico', cursive;
-    font-size: auto;
     height: 100%;
     margin: 0 3vw;
     align-self: center;
+    font-weight: 500;
     text-align: center;
+}
+
+.insta-logo,
+.wa-logo {
+    height: 80%;
+    width: 80%;
 }
 
 .buttons {
@@ -122,13 +157,6 @@ a {
 
 /* | MAIN | */
 
-.main {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-
 
 /* || section 1 */
 
@@ -140,24 +168,133 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
-    flex-basis: 84vh;
+    flex-basis: 90vh;
 }
 
 .banner {
     display: flex;
     flex-direction: column;
-    padding: 0 6vw;
+    padding: 0 2vw;
     width: 100%;
     height: 100%;
     color: #ffffff;
     text-align: center;
 }
 
+.banner-btn {
+    color: #000;
+    border-radius: 10px;
+    border: #000 solid 2px;
+    font-family: 'Akira Expanded', sans-serif;
+    padding: 6px 21px;
+    font-size: 21px;
+    position: absolute;
+    bottom: 10vh;
+    line-height: 35px;
+    font-weight: 900;
+    margin: 0 10px;
+    box-shadow: -5px 5px #000;
+    background-color: #ffffff;
+}
 
-/* || section 2 */
 
-.section-2 {
-    height: 100%;
+/* || section products */
+
+.p-slider {
     background: #ececec;
-    padding: 8vh 4vw;
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-box {
+    padding: 25px;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.p-img a,
+.p-img {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.p-img a img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.product-item {
+    font-size: 16.8px;
+    font-family: 'Rockwell Nova', sans-serif;
+    padding-top: 5px;
+}
+
+
+/* || section insta */
+
+.section-insta {
+    background: #fff;
+    padding: 3.75vw 0;
+}
+
+.section-insta_inner {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 3.7% !important;
+    padding-right: 3.7% !important;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.snapwidget-widget {
+    border: none;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (min-width: 1350px) {
+    .section-2 {
+        padding: 54px 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .section-2 {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    .section-2_inner {
+        padding: 2% 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .buttons {
+        padding: 0;
+    }
 }
