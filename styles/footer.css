@@ -24,6 +24,10 @@
     margin: 0 10px;
 }
 
+.footer-logo {
+    height: 150px;
+}
+
 .redes {
     display: flex;
 }
