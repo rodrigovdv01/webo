@@ -71,25 +71,22 @@
 
 .glider-next,
 .glider-prev {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    background: 0 0;
-    z-index: 2;
-    font-size: 40px;
+    background: #ffbb10;
+    z-index: 100;
+    font-size: 35px;
+    width: 30px;
+    height: 40px;
     text-decoration: none;
     left: -23px;
-    top: 30%;
+    top: 35%;
     cursor: pointer;
-    color: #666;
+    color: #000;
     opacity: 1;
     line-height: 1;
     transition: opacity .5s cubic-bezier(.17, .67, .83, .67), color .5s cubic-bezier(.17, .67, .83, .67)
-}
-
-.glider-next:focus,
-.glider-next:hover,
-.glider-prev:focus,
-.glider-prev:hover {
-    color: #ccc
 }
 
 .glider-next {

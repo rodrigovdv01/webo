@@ -1,0 +1,50 @@
+.page-footer {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 4rem 1rem 2rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-footer header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 14px;
+    flex-basis: 100%;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.redes {
+    display: flex;
+}
+
+.page-footer footer {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 5%;
+    font-size: 11px;
+}
+
+.desarrollador {
+    position: absolute;
+    right: 6rem;
+}
+
+.footer-column h2 {
+    font-family: 'Akira Expanded', sans-serif;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 5vh;
+}
+
+.footer-column li {
+    padding: 3px;
+}

@@ -1,0 +1,55 @@
+/*General Setup*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*outline: solid 1px red;*/
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+textarea {
+    overflow: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    user-select: none;
+}
+
+h3 {
+    color: #000;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+::selection {
+    background: black;
+    color: #FFBB10;
+}
+
+.page-wrapper {
+    display: grid;
+    margin: 0;
+    justify-items: stretch;
+    grid-template-rows: 10vh auto 20rem;
+    grid-template-columns: 1fr;
+}
