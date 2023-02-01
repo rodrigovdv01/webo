@@ -19,13 +19,22 @@
 
 @media screen and (max-width: 485px) {
     .page-footer footer {
-        padding-top: 15px;
+        padding-top: 5px;
         flex-direction: column;
         text-align: center;
     }
     .desarrollador {
         position: relative;
         left: 0;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .page-footer {
+        padding-top: 15px;
+    }
+    .footer-logo {
+        height: 120px;
     }
 }
 
