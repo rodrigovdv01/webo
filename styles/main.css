@@ -210,7 +210,6 @@
 }
 
 .ig-account {
-    color: #000;
     font-family: 'Work Sans', sans-serif;
     display: flex;
     max-width: fit-content;
@@ -218,7 +217,8 @@
     margin-bottom: 40px;
 }
 
-.ig-account span {
+.ig-account a {
+    color: #000;
     margin-left: 10px;
 }
 
