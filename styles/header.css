@@ -36,12 +36,8 @@
 }
 
 .title {
-    font-size: 110px;
-    color: #000;
     height: 100%;
     margin: 0 3vw;
-    font-weight: 400;
-    flex-basis: 100%;
     justify-content: center;
     text-align: center;
 }
@@ -59,4 +55,11 @@
 .buttons {
     display: flex;
     flex: 1;
+}
+
+@media screen and (max-width: 375px) {
+    .title {
+        height: 70%;
+        margin: 0 2vw;
+    }
 }
