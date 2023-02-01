@@ -1,5 +1,10 @@
 /*General Setup====*/
 
+@font-face {
+    font-family: 'AstroLight';
+    src: url('AstroLight.ttf') format('truetype');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +18,6 @@ body {
 }
 
 a {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -23,6 +27,10 @@ textarea {
 
 ul {
     list-style-type: none;
+}
+
+li a {
+    color: #fff;
 }
 
 img {
@@ -52,4 +60,13 @@ textarea {
     justify-items: stretch;
     grid-template-rows: 10vh auto 20rem;
     grid-template-columns: 1fr;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-icon {
+    height: 80%;
+    width: 80%;
 }

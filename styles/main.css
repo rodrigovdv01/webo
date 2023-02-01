@@ -210,6 +210,8 @@
 }
 
 .ig-account {
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
     display: flex;
     max-width: fit-content;
     align-items: center;

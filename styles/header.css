@@ -1,7 +1,7 @@
 /* | HEADER | =====*/
 
 .header {
-    height: 10vh;
+    height: 12vh;
     width: 100vw;
     padding: 0.5vh 2vw;
     position: fixed;
@@ -35,19 +35,17 @@
     background-color: #ffffff;
 }
 
-.logo {
-    font-family: 'Pacifico', cursive;
+.title {
+    font-family: 'AstroLight', sans-serif;
+    font-size: 110px;
+    color: #000;
     height: 100%;
     margin: 0 3vw;
-    align-self: center;
-    font-weight: 500;
+    font-weight: 400;
+    flex-basis: 100%;
+    transform: translateY(-12px);
+    justify-content: center;
     text-align: center;
-}
-
-.insta-logo,
-.wa-logo {
-    height: 80%;
-    width: 80%;
 }
 
 .buttons {
