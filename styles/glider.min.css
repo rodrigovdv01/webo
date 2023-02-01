@@ -194,6 +194,24 @@ prev-btn.disabled {
     width: 33.3%;
 }
 
+@media screen and (max-width: 1024px) {
+    .product {
+        flex: 0 0 33.3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product {
+        flex: 0 0 100%;
+    }
+}
+
 .product img {
     width: 100%;
     object-fit: cover;

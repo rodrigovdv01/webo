@@ -34,7 +34,16 @@ let isEnabled = true;
 
 function changeCurrent(newCurrent) {
     current = newCurrent;
-    slider.style.transform = `translateX(-${current * 25}%)`;
+    if (window.innerWidth >= 1024)
+        slider.style.transform = `translateX(-${current * 25}%)`;
+    else if (window.innerWidth >= 768)
+        slider.style.transform = `translateX(-${current * 33.3}%)`;
+    else if (window.innerWidth >= 600)
+        slider.style.transform = `translateX(-${current * 50}%)`;
+    else
+        slider.style.transform = `translateX(-${current * 100}%)`;
+
+
 
     if (current === 0) {
         prevBtn.disabled = true;
