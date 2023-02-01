@@ -36,14 +36,12 @@
 }
 
 .title {
-    font-family: 'AstroLight', sans-serif;
     font-size: 110px;
     color: #000;
     height: 100%;
     margin: 0 3vw;
     font-weight: 400;
     flex-basis: 100%;
-    transform: translateY(-12px);
     justify-content: center;
     text-align: center;
 }
