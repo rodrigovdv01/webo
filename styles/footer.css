@@ -11,7 +11,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.page-footer header {
+.page-footer-header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -32,7 +32,7 @@
     display: flex;
 }
 
-.page-footer footer {
+.page-footer-footer {
     display: flex;
     align-items: flex-end;
     flex-basis: 5%;

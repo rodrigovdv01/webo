@@ -1,5 +1,4 @@
-/**/
-
+/*
 .glider,
 .glider-contain {
     margin: 0 auto;
@@ -20,9 +19,6 @@
     outline: 0
 }
 
-.glider-contain {
-    width: 100%
-}
 
 .glider {
     overflow-y: hidden;
@@ -71,8 +67,8 @@
     height: 0
 }
 
-.glider-next,
-.glider-prev {
+.next-btn,
+.prev-btn {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -91,18 +87,18 @@
     transition: opacity .5s cubic-bezier(.17, .67, .83, .67), color .5s cubic-bezier(.17, .67, .83, .67)
 }
 
-.glider-next {
+next-btn {
     right: 0;
     left: auto
 }
 
-.glider-prev {
+prev-btn {
     right: auto;
     left: 0
 }
 
-.glider-next.disabled,
-.glider-prev.disabled {
+next-btn.disabled,
+prev-btn.disabled {
     opacity: .25;
     color: #666;
     cursor: default
@@ -126,4 +122,89 @@
         -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .25);
         box-shadow: 0 0 1px rgba(255, 255, 255, .25)
     }
+}*/
+
+.slider-container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    transition: transform 1.5s ease;
+}
+
+.next-btn,
+.prev-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background: #ffbb10;
+    z-index: 100;
+    font-size: 35px;
+    width: 30px;
+    height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    border: none;
+    opacity: 1;
+    line-height: 1;
+    transition: opacity .5s cubic-bezier(.17, .67, .83, .67), color .5s cubic-bezier(.17, .67, .83, .67)
+}
+
+.next-btn {
+    right: 0;
+    left: auto
+}
+
+.prev-btn {
+    right: auto;
+    left: 0
+}
+
+.next-btn.disabled,
+.prev-btn.disabled {
+    opacity: .25;
+    color: #666;
+    cursor: default
+}
+
+
+/* || section products =================================*/
+
+.p-slider {
+    background: #ececec;
+    padding: 50px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+    width: 33.3%;
+}
+
+.product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product h3 {
+    display: block;
+}
+
+.product-item {
+    font-size: 16.8px;
+    font-family: 'Rockwell Nova', sans-serif;
+    padding-top: 5px;
 }
