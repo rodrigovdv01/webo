@@ -58,7 +58,7 @@ textarea {
     display: grid;
     margin: 0;
     justify-items: stretch;
-    grid-template-rows: 10vh auto 20rem;
+    grid-template-rows: 12vh auto 20rem;
     grid-template-columns: 1fr;
 }
 
