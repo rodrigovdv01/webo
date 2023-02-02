@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 485px) {
-    .page-footer footer {
+    .page-footer-footer {
         padding-top: 5px;
         flex-direction: column;
         text-align: center;
@@ -26,6 +26,12 @@
     .desarrollador {
         position: relative;
         left: 0;
+    }
+    .footer-column {
+        text-align: center;
+    }
+    .redes {
+        justify-content: center;
     }
 }
 
