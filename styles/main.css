@@ -77,11 +77,11 @@
 }
 
 .blue {
-    background-color: #2585ce;
+    background-color: #4698CA;
 }
 
 .yellow {
-    background-color: #ffa510;
+    background-color: #FFC557;
 }
 
 .section-2-inner {
@@ -199,17 +199,17 @@
 /* Hover ===============================================*/
 
 .box-btn:hover {
-    background-color: #0d8856;
+    background-color: #1D8649;
 }
 
 .menu-btn:hover {
-    background-color: #ffa510;
+    background-color: #FF7F41;
 }
 
 .banner-btn:hover {
-    background-color: #0d8856;
+    background-color: #1D8649;
 }
 
 .btn:hover {
-    background-color: #FFBB10;
+    background-color: #FF7F41;
 }

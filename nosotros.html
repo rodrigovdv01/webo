@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/glider.min.css">
     <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
@@ -31,7 +32,7 @@
             <header id="header" class="header">
                 <div class="header_inner">
                     <div class="menu">
-                        <a class="menu-btn" href="#">MENU</a>
+                        <button class="menu-btn display-menu">MENU</a>
                     </div>
                     <a href="index.html">
                         <img class="title" src="images/webo-title.png">
@@ -41,9 +42,19 @@
                         <button id="wa-header" class="btn wa"><img class="btn-icon" src="images/whatsapp.png"></button>
                     </div>
                 </div>
+                <div class="header-out">
+                    <div class="header-out-menu">
+                        <a id="inicio-header" class="menu-btn inner-btn" href="index.html">INICIO</a>
+                        <a id="tienda-header" class="menu-btn inner-btn" href="tienda.html">TIENDA</a>
+                        <a id="nosotros-header" class="menu-btn inner-btn" href="nosotros.html">NOSOTROS</a>
+                        <a id="about-header" class="menu-btn inner-btn" href="contacto.html">CONTACTO</a>
+                    </div>
+                    <div class="cerrar-container"><button class="cerrar">cerrar</button></div>
+                </div>
             </header>
             <main class="main">
-                <img src="images/proximamente.png"> .nosotros-inner
+                <img src="images/proximamente.png">
+
             </main>
             <footer class="page-footer">
                 <div class="page-footer-header">
@@ -54,9 +65,9 @@
                         <h2>NAVEGACION</h2>
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
-                            <li><a href="tienda.html">Tienda</a></li>
                             <li><a href="nosotros.html">Nosotros</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
                         </ul>
                     </div>
 
@@ -86,6 +97,8 @@
     </div>
 
     <script src="js/functions.js"></script>
+    <script src="js/nosotros.js"></script>
+
 </body>
 
 </html>
