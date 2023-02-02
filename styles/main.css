@@ -76,8 +76,8 @@
     height: auto;
 }
 
-.blue {
-    background-color: #4698CA;
+.green {
+    background-color: #1D8649;
 }
 
 .yellow {
@@ -107,6 +107,12 @@
     line-height: 40px;
 }
 
+.content h2 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+}
+
 .content p {
     margin-top: 15px;
     margin-bottom: 60px;
@@ -115,12 +121,12 @@
     line-height: 25px;
 }
 
-.green-font {
-    color: #0d8856;
+.blue-font {
+    color: #615E9B;
 }
 
-.purple-font {
-    color: #8dabde;
+.orange-font {
+    color: #FF7F41;
 }
 
 .box-img {
