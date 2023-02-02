@@ -22,8 +22,10 @@
 }
 
 .menu-btn {
+    display: flex;
     transition: background-color .8s;
     align-items: center;
+    justify-content: center;
     padding: 10px 15px;
     color: #000;
     border-radius: 10px;
