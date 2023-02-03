@@ -65,7 +65,7 @@
     }
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 974px) {
     .section-2-inner {
         flex-direction: column;
     }
