@@ -17,6 +17,134 @@
 }
 
 
+/* | HEADER | ====== */
+
+.header {
+    height: 12vh;
+    width: 100vw;
+    padding: 0.5vh 2vw;
+    position: fixed;
+    z-index: 1000;
+    background-color: #faf6f0;
+}
+
+.header_inner {
+    display: flex;
+    height: 100%;
+}
+
+.menu {
+    flex: 1;
+    align-items: center;
+    align-self: center;
+    justify-content: end;
+}
+
+.menu-btn {
+    display: flex;
+    transition: background-color 2s;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 10px;
+    border: #000 solid 2px;
+    font-family: 'Akira Expanded', sans-serif;
+    font-weight: 900;
+    box-shadow: -5px 5px #000;
+    background-color: #ffffff;
+}
+
+.header-out {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 12vh;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    padding-bottom: 80vh;
+}
+
+.header-out-menu {
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.inner-btn {
+    flex: 1;
+    height: 50px;
+    margin: auto 5%;
+    text-align: center;
+}
+
+.cerrar {
+    transition: background-color 2s;
+    font-size: 25px;
+    display: flex;
+    width: 100%;
+    padding: 10px 0 0;
+    height: 5vh;
+    background: #fff;
+    border: none;
+    justify-content: center;
+    color: #000;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.cerrar-img {
+    height: 100%;
+}
+
+.cerrar:hover {
+    cursor: pointer;
+    background: #4698CA;
+}
+
+@media screen and (max-width: 768px) {
+    .header-out {
+        padding-bottom: 60vh;
+    }
+    .header-out-menu {
+        flex-wrap: wrap;
+    }
+    .inner-btn {
+        flex: 1;
+    }
+}
+
+.title {
+    height: 100%;
+    margin: 0 3vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttons {
+    height: 80%;
+    flex: 1;
+    align-items: center;
+    align-self: center;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+.title,
+.buttons {
+    display: flex;
+    flex: 1;
+}
+
+@media screen and (max-width: 375px) {
+    .title {
+        height: 70%;
+        margin: 0 2vw;
+    }
+}
+
+
 /* | MAIN | ================================ */
 
 .main {
@@ -98,12 +226,12 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 100px 100px 80px 35px;
+    padding: 100px 60px 80px 35px;
 }
 
 .content h1 {
     font-family: 'Akira Expanded', sans-serif;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 40px;
 }
 
@@ -157,6 +285,14 @@
 
 #img-box1 {
     background: url("../images/caja-12.png");
+}
+
+@media screen and (max-width: 425px) {
+    .content {
+        padding-left: 15px;
+        padding-right: 25px;
+        padding-top: 50px;
+    }
 }
 
 
@@ -213,6 +349,10 @@
 .box-btn:hover {
     background-color: #FF7F41;
     box-shadow: -5px 5px #fff;
+}
+
+#comprar-box1:hover {
+    background: #615E9B;
 }
 
 .banner-btn:hover {
